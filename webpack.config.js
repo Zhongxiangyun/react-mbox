@@ -60,7 +60,8 @@ module.exports = {
                     plugins: [
                         "transform-async-to-generator",
                         "transform-decorators-legacy",
-                        ["import", {"libraryName": "antd", "style": true}]
+                        ["import", {"libraryName": "antd", "style": true}],
+                        "react-hot-loader/babel"
                     ]
                 }
             },
@@ -108,6 +109,6 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({hash: false, template: "./index.hbs"}),
-        new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /nb/)
+        //new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /nb/)
     ]
 };
