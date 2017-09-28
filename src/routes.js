@@ -15,7 +15,6 @@ import UserMain from "./components/user/UserMain"
 import SearchConfig from "./components/user/SearchConfig"
 import HlPagination from "./components/common/TestPage"
 import SearchMain from "./components/search/SearchMain";
-import TopicShowMain from './components/topic/TopicShowMain';
 import ClusterMain from './components/cluster/ClusterMain';
 import CabinetMain from './components/cabinet/CabinetMain';
 import HostMain from './components/host/HostMain';
@@ -27,11 +26,7 @@ import FromEdit from "./components/from/FromEdit";
 import ImgShow from "./components/img/ImgShow";
 
 const routes = [
-    {
-        path: '/topicShow',
-        protected: 'no',
-        component: TopicShowMain
-    },
+
 
     /*搜索设置SearchMain*/
     {

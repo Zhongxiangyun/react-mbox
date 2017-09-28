@@ -9,6 +9,7 @@ import SearchState from "./SearchState";
 import SystemState from './SystemState';
 import AnalysisState from './AnalysisState';
 import HostState from './HostState';
+import FromState from './FromState';
 
 export default store.setup({
     nlpState: NlpState,
@@ -20,4 +21,5 @@ export default store.setup({
     systemState: SystemState,
     analysisState: AnalysisState,
     hostState: HostState,
+    fromState: FromState,
 });
