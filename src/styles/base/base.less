@@ -1,0 +1,491 @@
+@import "~antd/lib/style/color/colors";
+@import "~antd/lib/style/themes/default";
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  //overflow-y: scroll;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666;
+  a {
+    margin-left: .5ch;
+    &:first-child {
+      margin-right: .5ch;
+    }
+  }
+}
+
+.fgw-width-20rem {
+  width: 20rem;
+}
+
+.content-main {
+  padding: 0 14px 14px 14px;
+}
+
+.logo {
+  height: 32px;
+  background: #333;
+  border-radius: 6px;
+  margin: 16px;
+}
+
+.ant-layout-sider-collapsed .anticon {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.ant-layout-sider-collapsed .nav-text {
+  display: none;
+}
+
+.ant-layout-sider-collapsed .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+  display: none;
+}
+
+.ant-menu-inline {
+  border: 0 !important;
+}
+
+/*
+*主页公共样式配置css控制管理--2017-06-16
+*/
+
+/*控制边距相关*/
+@fgw_margin_20: 20px;
+@fgw_margin_60: 60px;
+@fgw_card_height: 300px;
+@fgw_container: 1340px;
+
+.fgw-container {
+  width: @fgw_container;
+}
+
+.fgw-app-header {
+  background-color: #216fd8 !important;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.fgw-search-bar {
+  width: 1300px;
+  float: left;
+}
+
+.fgw-margin-20 {
+  margin: 20px;
+}
+
+.fgw-margin-top-20 {
+  margin-top: @fgw_margin_20;
+}
+
+.fgw-margin-right-20 {
+  margin-right: @fgw_margin_20;
+}
+
+.fgw-margin-bottom-20 {
+  margin-bottom: @fgw_margin_20;
+}
+
+.fgw-margin-left-20 {
+  margin-left: @fgw_margin_20;
+}
+
+.fgw-margin-right-60 {
+  margin-right: @fgw_margin_60 !important;
+}
+
+.fgw-card {
+  height: @fgw_card_height;
+  margin-bottom: @fgw_margin_20;
+  p {
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #dedede;
+  }
+
+}
+
+.fgw-right-bar {
+  //width: 340px;
+  //height: 700px;
+}
+
+.fgw-icon-20 {
+  padding: 20px 10px 0 20px;
+  margin-bottom: -4px;
+}
+
+/*控制颜色相关*/
+.fgw-white {
+  background: #fff;
+}
+
+.fgw-span-blue {
+  color: #0183ff;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/*控制字体大小*/
+.fgw-word {
+  height: 60px;
+  line-height: 68px;
+  border-bottom: 1px solid #dedede;
+}
+
+.fgw-card-title {
+  margin: 0 6px 10px -20px;
+  line-height: 60px;
+  color: #0183ff;
+
+}
+
+.fgw-card-title_2 {
+  margin: 0 6px -20px -2px;
+  line-height: 60px;
+  color: #0183ff;
+
+}
+
+.fgw-icon-color {
+  color: #0183ff;
+}
+
+.fgw-card-span {
+  height: 24px;
+  color: #3294ff;
+  border: 1px solid #3294ff;
+  line-height: 24px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 20px 20px 0;
+
+}
+
+.fgw-right-p {
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  span {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.fgw-img-0 {
+  padding-right: 10px;
+}
+
+/*.fgw-bg-1 {
+  background: url("/static/image/fgw1.png") no-repeat right -20px;
+  background-size: 160px 80px;
+}
+
+.fgw-bg-2 {
+  background: url("/static/image/fgw2.png") no-repeat right -20px;
+  background-size: 160px 80px;
+}
+
+.fgw-bg-3 {
+  background: url("/static/image/fgw3.png") no-repeat right -20px;
+  background-size: 160px 80px;
+}
+
+.fgw-bg-4 {
+  background: url("/static/image/fgw4.png") no-repeat right -20px;
+  background-size: 160px 80px;
+}*/
+
+.fgw-top-1 {
+  background: url("/static/image/top1.png") no-repeat 0 8px;
+  background-size: 20px 20px;
+}
+
+.fgw-top-2 {
+  background: url("/static/image/top2.png") no-repeat 0 8px;
+  background-size: 20px 20px;
+}
+
+.fgw-top-3 {
+  background: url("/static/image/top3.png") no-repeat 0 8px;
+  background-size: 20px 20px;
+}
+
+/*控制搜索框大小相关*/
+.fgw-lager-search {
+  //position: relative;
+  //top: 30%;
+  //transform: translate(0, -50%);
+  padding: 20px;
+}
+
+.fgw-hot-search {
+}
+
+/*控制按钮*/
+.fgw-search-input {
+  height: 50px !important;
+  line-height: 50px !important;
+  padding: 10px;
+  border-radius: 22px !important;
+  /*box-shadow: 0 2px 6px 0 rgb(0,0,0,0.1);*/
+  overflow: hidden;
+}
+
+.fgw-search-button {
+  width: 140px;
+  height: 50px !important;
+  line-height: 50px !important;
+  padding: 10px;
+  border-radius: 22px !important;
+  box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.fgw-search-button-2 {
+  width: 88px;
+  height: 28px !important;
+  line-height: 28px !important;
+  padding: 10px;
+  border-radius: 22px !important;
+  box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: 66px;
+}
+
+/*清除浮动*/
+.fgw-clear:before, .fgw-clear:after {
+  clear: both;
+}
+
+.fgw-clear:after {
+  display: block;
+  content: "";
+}
+
+.fgw-text-error {
+  //color: @red-6;
+  color: @error-color;
+}
+
+/*三角*/
+.fgw-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-left-color: #0183ff;
+  right: -5px;
+  top: 36px;
+}
+
+/*标签页*/
+.fgw-tab {
+  background: #fff;
+  position: relative;
+  text-align: center;
+  height: 180px;
+  line-height: 32px;
+  color: #666;
+  margin-bottom: @fgw_margin_20;
+}
+
+.fgw-tab-select {
+  background-color: #0183ff;
+  position: relative;
+  text-align: center;
+  height: 180px;
+  line-height: 32px;
+  //width: 250px;
+  margin-bottom: @fgw_margin_20;
+  p {
+    color: #fff;
+  }
+}
+
+.fgw-tab-img {
+  width: 40px;
+  height: auto;
+}
+
+/*垂直居中css控制*/
+.fgw-center {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+/*
+.fgw-tab-img-span{
+  width: 100%;
+  height: 40px;
+  background: url("/static/image/eco1.png") no-repeat;
+  background-size: 20px 20px;
+}*/
+/*文章管理相关样式控制 ————独立存在*/
+.fgw-align-center {
+  text-align: center;
+}
+
+.fgw-article-container {
+  min-height: 720px;
+  padding: 30px 20px;
+  line-height: 34px;
+  text-indent: 2em; //首行缩进两格
+  overflow: hidden;
+}
+
+.fgw-article-p {
+  line-height: 1.8rem;
+}
+
+.fgw-article-view {
+  float: right;
+}
+
+.fgw-article-topics {
+  float: left;
+}
+
+.fgw-article-extend {
+  vertical-align: top;
+  display: inline-block;
+  //width: 4rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fgw-article-topic {
+  //width: 10rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.fgw-article-font {
+
+}
+
+.fgw-margin-left-60 {
+  margin-left: 60px;
+}
+
+.fgw-pull-left {
+  float: left;
+}
+
+.fgw-pull-right {
+  float: right;
+}
+
+.fgw-table-operation {
+  text-align: right;
+  > * {
+    margin-left: 14px;
+  }
+}
+
+/*主页政策信息搜索展示相关样式控制*/
+.fgw-nums {
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  color: #999;
+}
+
+.fgw-section {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #999999;
+  padding-bottom: 0.5rem;
+  //border-collapse: collapse;
+
+  a {
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .sourceurl {
+    color: #1694d8;
+    margin-top: 0.2rem;
+    display: inline-block;
+  }
+  .fgw-c-title {
+    font-size: 1.1rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .fgw-c-abstract {
+    text-indent: 2rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    overflow: hidden;
+    max-height: 4rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    //word-break: break-word;
+  }
+
+  em {
+    color: red;
+    font-style: normal;
+  }
+}
+
+.fgw-red {
+  color: red;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fgw-font-20 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edoc-search-panel {
+  em {
+    color: red;
+    font-style: normal;
+  }
+}

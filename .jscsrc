@@ -1,0 +1,7 @@
+{
+  // 使用 jquery 编码风格规范
+  "preset": "jquery",
+
+  // 改变 requireCurlyBraces 规则
+  "requireCurlyBraces": null // or false
+}
